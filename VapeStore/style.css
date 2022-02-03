@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4 , 9 , 30 , 0.7) , rgba(4 , 9 , 30 , 0.7)) , url(images/617b34b72505c.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+    padding: 2% 6%; /* top and bottom , right nad left */
+}
+
+.nav-links{
+    flex: 1; /* sets the flexible length on flexible items */
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block; /* inline-block to display them horizontally (side by side). */
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text{
+    width: 100%;
+    color: #fff;
+    position: absolute; /*The element is positioned relative to its first position*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+.text h1{
+    font-size: 62px;
+}
+
+.text p{
+    margin: 10px 0 40px; /*top , right and left , bottom*/
+    font-size: 16px;
+    color: #fff;
+}
+
+.products{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.products h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.products p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #777;
+    padding: 10px;
+}
+
+.products-row{
+    margin-top: 5%;
+    display: flex; /* felx box*/
+    justify-content: space-between;
+}
+
+.products-col{
+    flex-basis: 31%; /* set the length or width of flexible items*/
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center; 
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.products-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2); /*adds shadow effects around an element's frame*/
+}
+
+.vape-row{
+    margin-top: 5%;
+    display: flex; /* display as flex box*/
+}
+
+.new-vapes{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.vapes-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.vapes-col img{
+    width: 60%;
+    border-radius: 10px;
+}
+
+.used-vapes{
+    width: 80%;
+    margin: auto; /* The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+*/
+    text-align: center;
+    padding-top: 50px;
+}
+
+.customers{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.cust-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cust-col{
+    flex-basis: 44%; /* length of column or the width */
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.cust-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.cust-col p{
+    padding: 0%;
+}
+
+.cust-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.cust-col .fa{
+    color: #f44336;
+}
+
+.drip{
+    margin: 100px auto; /*top and bottom , right and left */
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url(images/IMG_0631.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    padding: 100px 0; /*top and bottom , right and left */
+}
+
+.drip h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}   
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+.contact{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col, .footer-col-2 , .footer-col-3 , .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.footer-col{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-3 , .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+.logo img{
+    width: 140px;
+}
+
+
+
+
+
